@@ -1,2 +1,2 @@
 # matrix-calculator
- C++ University Projects
+ C++ University Project
