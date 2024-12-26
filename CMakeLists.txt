@@ -1,10 +1,12 @@
-project(matrix-calculator)
+cmake_minimum_required(VERSION 3.10)
 
-cmake_minimum_required(VERSION 3.5)
+project(matrix-calculator)
 
 set(CMAKE_CXX_STANDARD 11)
 
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
+
+include_directories(src ${CMAKE_BINARY_DIR})
 
 set(SOURCES
     src/main.cpp
@@ -23,6 +25,6 @@ set(UI_FILES
 
 qt5_wrap_ui(UI_HEADERS ${UI_FILES})
 
-add_executable(matrix-calculator ${SOURCES} ${HEADERS} ${UI_HEADERS})
+add_executable(matrix-calculator ${SOURCES} ${UI_HEADERS})
 
 target_link_libraries(matrix-calculator Qt5::Widgets)

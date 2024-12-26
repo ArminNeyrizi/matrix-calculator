@@ -2,7 +2,6 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QVector>
 #include "matrix.h"
 
 QT_BEGIN_NAMESPACE
@@ -18,19 +17,18 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_addButton_clicked();
-    void on_subtractButton_clicked();
-    void on_multiplyButton_clicked();
-    void on_clearButton_clicked();
+    void addMatrices();
+    void subtractMatrices();
+    void multiplyMatrices();
 
 private:
+    Matrix getMatrixFromInput(QLineEdit* input);
+    void displayResult(const Matrix& result);
+
     Ui::MainWindow *ui;
     Matrix matrixA;
     Matrix matrixB;
     Matrix resultMatrix;
-
-    void displayResult(const Matrix &result);
-    void readMatricesFromInput();
 };
 
 #endif // MAINWINDOW_H

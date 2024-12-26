@@ -2,10 +2,14 @@
 #include "ui_mainwindow.h"
 #include "matrix.h"
 #include <QMessageBox>
+#include <QLineEdit>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::MainWindow)
+    ui(new Ui::MainWindow),
+    matrixA(3, 3),  // Initialize with appropriate dimensions
+    matrixB(3, 3),  // Initialize with appropriate dimensions
+    resultMatrix(3, 3)  // Initialize with appropriate dimensions
 {
     ui->setupUi(this);
     connect(ui->addButton, &QPushButton::clicked, this, &MainWindow::addMatrices);
@@ -45,17 +49,12 @@ void MainWindow::multiplyMatrices()
     displayResult(result);
 }
 
-Matrix MainWindow::getMatrixFromInput(QLineEdit *inputField)
+Matrix MainWindow::getMatrixFromInput(QLineEdit* input)
 {
-    // Logic to parse input from QLineEdit and create a Matrix object
-    // This is a placeholder for actual implementation
-    Matrix mat;
-    return mat;
+    // Implement this function to parse matrix input from QLineEdit
 }
 
-void MainWindow::displayResult(const Matrix &result)
+void MainWindow::displayResult(const Matrix& result)
 {
-    // Logic to display the result in the UI
-    // This is a placeholder for actual implementation
-    QMessageBox::information(this, "Result", "Matrix operation result displayed here.");
+    // Implement this function to display the result matrix
 }

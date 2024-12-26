@@ -25,10 +25,9 @@ matrix-calculator
 
 ## Building the Project
 1. Clone the repository:
-   ```
-   git clone <repository-url>
+   ```bash
+   git clone https://github.com/ArminNeyrizi/matrix-calculator.git
    cd matrix-calculator
-   ```
 
 2. Create a build directory:
    ```
