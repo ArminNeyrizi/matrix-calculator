@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <widget class="QLabel" name="labelMatrixA">
+     <property name="text">
+      <string>Matrix A:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditMatrixA"/>
+    <widget class="QLabel" name="labelMatrixB">
+     <property name="text">
+      <string>Matrix B:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditMatrixB"/>
+    <widget class="QPushButton" name="buttonAdd">
+     <property name="text">
+      <string>Add</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="buttonSubtract">
+     <property name="text">
+      <string>Subtract</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="buttonMultiply">
+     <property name="text">
+      <string>Multiply</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelResult">
+     <property name="text">
+      <string>Result:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditResult" readOnly="true"/>
+   </layout>
+  </widget>
+  <menuBar class="QMenuBar" name="menubar">
+   <menu class="QMenu" name="menuFile">
+    <action name="actionExit">
+     <property name="text">
+      <string>Exit</string>
+     </property>
+    </action>
+   </menu>
+  </menuBar>
+  <statusBar class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
