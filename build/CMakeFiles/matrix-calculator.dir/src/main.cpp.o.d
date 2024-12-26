@@ -1064,5 +1064,13 @@ CMakeFiles/matrix-calculator.dir/src/main.cpp.o: \
   /opt/anaconda3/include/qt/QtGui/qkeysequence.h \
   /opt/anaconda3/include/qt/QtWidgets/qtabwidget.h \
   /opt/anaconda3/include/qt/QtGui/qicon.h \
-  /opt/anaconda3/include/qt/QtCore/QVector \
+  /opt/anaconda3/include/qt/QtWidgets/QLineEdit \
+  /opt/anaconda3/include/qt/QtWidgets/qlineedit.h \
+  /opt/anaconda3/include/qt/QtWidgets/qframe.h \
+  /opt/anaconda3/include/qt/QtGui/qtextcursor.h \
+  /opt/anaconda3/include/qt/QtGui/qtextformat.h \
+  /opt/anaconda3/include/qt/QtGui/qpen.h \
+  /opt/anaconda3/include/qt/QtGui/qtextoption.h \
+  /opt/anaconda3/include/qt/QtWidgets/QWidget \
+  /opt/anaconda3/include/qt/QtCore/QString \
   /Users/armin/Documents/GitHub/matrix-calculator/src/matrix.h

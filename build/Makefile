@@ -129,6 +129,56 @@ matrix-calculator/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix-calculator.dir/build.make CMakeFiles/matrix-calculator.dir/build
 .PHONY : matrix-calculator/fast
 
+#=============================================================================
+# Target rules for targets named matrix-calculator_autogen_timestamp_deps
+
+# Build rule for target.
+matrix-calculator_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 matrix-calculator_autogen_timestamp_deps
+.PHONY : matrix-calculator_autogen_timestamp_deps
+
+# fast build rule for target.
+matrix-calculator_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix-calculator_autogen_timestamp_deps.dir/build.make CMakeFiles/matrix-calculator_autogen_timestamp_deps.dir/build
+.PHONY : matrix-calculator_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named matrix-calculator_autogen
+
+# Build rule for target.
+matrix-calculator_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 matrix-calculator_autogen
+.PHONY : matrix-calculator_autogen
+
+# fast build rule for target.
+matrix-calculator_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix-calculator_autogen.dir/build.make CMakeFiles/matrix-calculator_autogen.dir/build
+.PHONY : matrix-calculator_autogen/fast
+
+matrix-calculator_autogen/mocs_compilation.o: matrix-calculator_autogen/mocs_compilation.cpp.o
+.PHONY : matrix-calculator_autogen/mocs_compilation.o
+
+# target to build an object file
+matrix-calculator_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix-calculator.dir/build.make CMakeFiles/matrix-calculator.dir/matrix-calculator_autogen/mocs_compilation.cpp.o
+.PHONY : matrix-calculator_autogen/mocs_compilation.cpp.o
+
+matrix-calculator_autogen/mocs_compilation.i: matrix-calculator_autogen/mocs_compilation.cpp.i
+.PHONY : matrix-calculator_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+matrix-calculator_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix-calculator.dir/build.make CMakeFiles/matrix-calculator.dir/matrix-calculator_autogen/mocs_compilation.cpp.i
+.PHONY : matrix-calculator_autogen/mocs_compilation.cpp.i
+
+matrix-calculator_autogen/mocs_compilation.s: matrix-calculator_autogen/mocs_compilation.cpp.s
+.PHONY : matrix-calculator_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+matrix-calculator_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix-calculator.dir/build.make CMakeFiles/matrix-calculator.dir/matrix-calculator_autogen/mocs_compilation.cpp.s
+.PHONY : matrix-calculator_autogen/mocs_compilation.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -209,7 +259,12 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... matrix-calculator_autogen"
+	@echo "... matrix-calculator_autogen_timestamp_deps"
 	@echo "... matrix-calculator"
+	@echo "... matrix-calculator_autogen/mocs_compilation.o"
+	@echo "... matrix-calculator_autogen/mocs_compilation.i"
+	@echo "... matrix-calculator_autogen/mocs_compilation.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

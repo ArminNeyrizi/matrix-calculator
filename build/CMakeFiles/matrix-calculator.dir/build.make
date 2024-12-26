@@ -69,17 +69,34 @@ include CMakeFiles/matrix-calculator.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/matrix-calculator.dir/flags.make
 
-ui_mainwindow.h: /Users/armin/Documents/GitHub/matrix-calculator/src/mainwindow.ui
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/armin/Documents/GitHub/matrix-calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ui_mainwindow.h"
-	/opt/anaconda3/bin/uic -o /Users/armin/Documents/GitHub/matrix-calculator/build/ui_mainwindow.h /Users/armin/Documents/GitHub/matrix-calculator/src/mainwindow.ui
+matrix-calculator_autogen/timestamp: /opt/anaconda3/bin/moc
+matrix-calculator_autogen/timestamp: /opt/anaconda3/bin/uic
+matrix-calculator_autogen/timestamp: CMakeFiles/matrix-calculator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/armin/Documents/GitHub/matrix-calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target matrix-calculator"
+	/opt/homebrew/bin/cmake -E cmake_autogen /Users/armin/Documents/GitHub/matrix-calculator/build/CMakeFiles/matrix-calculator_autogen.dir/AutogenInfo.json ""
+	/opt/homebrew/bin/cmake -E touch /Users/armin/Documents/GitHub/matrix-calculator/build/matrix-calculator_autogen/timestamp
 
 CMakeFiles/matrix-calculator.dir/codegen:
 .PHONY : CMakeFiles/matrix-calculator.dir/codegen
 
+CMakeFiles/matrix-calculator.dir/matrix-calculator_autogen/mocs_compilation.cpp.o: CMakeFiles/matrix-calculator.dir/flags.make
+CMakeFiles/matrix-calculator.dir/matrix-calculator_autogen/mocs_compilation.cpp.o: matrix-calculator_autogen/mocs_compilation.cpp
+CMakeFiles/matrix-calculator.dir/matrix-calculator_autogen/mocs_compilation.cpp.o: CMakeFiles/matrix-calculator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/armin/Documents/GitHub/matrix-calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/matrix-calculator.dir/matrix-calculator_autogen/mocs_compilation.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/matrix-calculator.dir/matrix-calculator_autogen/mocs_compilation.cpp.o -MF CMakeFiles/matrix-calculator.dir/matrix-calculator_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/matrix-calculator.dir/matrix-calculator_autogen/mocs_compilation.cpp.o -c /Users/armin/Documents/GitHub/matrix-calculator/build/matrix-calculator_autogen/mocs_compilation.cpp
+
+CMakeFiles/matrix-calculator.dir/matrix-calculator_autogen/mocs_compilation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/matrix-calculator.dir/matrix-calculator_autogen/mocs_compilation.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/armin/Documents/GitHub/matrix-calculator/build/matrix-calculator_autogen/mocs_compilation.cpp > CMakeFiles/matrix-calculator.dir/matrix-calculator_autogen/mocs_compilation.cpp.i
+
+CMakeFiles/matrix-calculator.dir/matrix-calculator_autogen/mocs_compilation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/matrix-calculator.dir/matrix-calculator_autogen/mocs_compilation.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/armin/Documents/GitHub/matrix-calculator/build/matrix-calculator_autogen/mocs_compilation.cpp -o CMakeFiles/matrix-calculator.dir/matrix-calculator_autogen/mocs_compilation.cpp.s
+
 CMakeFiles/matrix-calculator.dir/src/main.cpp.o: CMakeFiles/matrix-calculator.dir/flags.make
 CMakeFiles/matrix-calculator.dir/src/main.cpp.o: /Users/armin/Documents/GitHub/matrix-calculator/src/main.cpp
 CMakeFiles/matrix-calculator.dir/src/main.cpp.o: CMakeFiles/matrix-calculator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/armin/Documents/GitHub/matrix-calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/matrix-calculator.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/armin/Documents/GitHub/matrix-calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/matrix-calculator.dir/src/main.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/matrix-calculator.dir/src/main.cpp.o -MF CMakeFiles/matrix-calculator.dir/src/main.cpp.o.d -o CMakeFiles/matrix-calculator.dir/src/main.cpp.o -c /Users/armin/Documents/GitHub/matrix-calculator/src/main.cpp
 
 CMakeFiles/matrix-calculator.dir/src/main.cpp.i: cmake_force
@@ -93,7 +110,7 @@ CMakeFiles/matrix-calculator.dir/src/main.cpp.s: cmake_force
 CMakeFiles/matrix-calculator.dir/src/mainwindow.cpp.o: CMakeFiles/matrix-calculator.dir/flags.make
 CMakeFiles/matrix-calculator.dir/src/mainwindow.cpp.o: /Users/armin/Documents/GitHub/matrix-calculator/src/mainwindow.cpp
 CMakeFiles/matrix-calculator.dir/src/mainwindow.cpp.o: CMakeFiles/matrix-calculator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/armin/Documents/GitHub/matrix-calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/matrix-calculator.dir/src/mainwindow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/armin/Documents/GitHub/matrix-calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/matrix-calculator.dir/src/mainwindow.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/matrix-calculator.dir/src/mainwindow.cpp.o -MF CMakeFiles/matrix-calculator.dir/src/mainwindow.cpp.o.d -o CMakeFiles/matrix-calculator.dir/src/mainwindow.cpp.o -c /Users/armin/Documents/GitHub/matrix-calculator/src/mainwindow.cpp
 
 CMakeFiles/matrix-calculator.dir/src/mainwindow.cpp.i: cmake_force
@@ -107,7 +124,7 @@ CMakeFiles/matrix-calculator.dir/src/mainwindow.cpp.s: cmake_force
 CMakeFiles/matrix-calculator.dir/src/matrix.cpp.o: CMakeFiles/matrix-calculator.dir/flags.make
 CMakeFiles/matrix-calculator.dir/src/matrix.cpp.o: /Users/armin/Documents/GitHub/matrix-calculator/src/matrix.cpp
 CMakeFiles/matrix-calculator.dir/src/matrix.cpp.o: CMakeFiles/matrix-calculator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/armin/Documents/GitHub/matrix-calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/matrix-calculator.dir/src/matrix.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/armin/Documents/GitHub/matrix-calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/matrix-calculator.dir/src/matrix.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/matrix-calculator.dir/src/matrix.cpp.o -MF CMakeFiles/matrix-calculator.dir/src/matrix.cpp.o.d -o CMakeFiles/matrix-calculator.dir/src/matrix.cpp.o -c /Users/armin/Documents/GitHub/matrix-calculator/src/matrix.cpp
 
 CMakeFiles/matrix-calculator.dir/src/matrix.cpp.i: cmake_force
@@ -120,6 +137,7 @@ CMakeFiles/matrix-calculator.dir/src/matrix.cpp.s: cmake_force
 
 # Object files for target matrix-calculator
 matrix__calculator_OBJECTS = \
+"CMakeFiles/matrix-calculator.dir/matrix-calculator_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/matrix-calculator.dir/src/main.cpp.o" \
 "CMakeFiles/matrix-calculator.dir/src/mainwindow.cpp.o" \
 "CMakeFiles/matrix-calculator.dir/src/matrix.cpp.o"
@@ -127,6 +145,7 @@ matrix__calculator_OBJECTS = \
 # External object files for target matrix-calculator
 matrix__calculator_EXTERNAL_OBJECTS =
 
+matrix-calculator: CMakeFiles/matrix-calculator.dir/matrix-calculator_autogen/mocs_compilation.cpp.o
 matrix-calculator: CMakeFiles/matrix-calculator.dir/src/main.cpp.o
 matrix-calculator: CMakeFiles/matrix-calculator.dir/src/mainwindow.cpp.o
 matrix-calculator: CMakeFiles/matrix-calculator.dir/src/matrix.cpp.o
@@ -135,7 +154,7 @@ matrix-calculator: /opt/anaconda3/lib/libQt5Widgets.5.15.2.dylib
 matrix-calculator: /opt/anaconda3/lib/libQt5Gui.5.15.2.dylib
 matrix-calculator: /opt/anaconda3/lib/libQt5Core.5.15.2.dylib
 matrix-calculator: CMakeFiles/matrix-calculator.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/armin/Documents/GitHub/matrix-calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable matrix-calculator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/armin/Documents/GitHub/matrix-calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable matrix-calculator"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/matrix-calculator.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -146,7 +165,7 @@ CMakeFiles/matrix-calculator.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/matrix-calculator.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/matrix-calculator.dir/clean
 
-CMakeFiles/matrix-calculator.dir/depend: ui_mainwindow.h
+CMakeFiles/matrix-calculator.dir/depend: matrix-calculator_autogen/timestamp
 	cd /Users/armin/Documents/GitHub/matrix-calculator/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/armin/Documents/GitHub/matrix-calculator /Users/armin/Documents/GitHub/matrix-calculator /Users/armin/Documents/GitHub/matrix-calculator/build /Users/armin/Documents/GitHub/matrix-calculator/build /Users/armin/Documents/GitHub/matrix-calculator/build/CMakeFiles/matrix-calculator.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/matrix-calculator.dir/depend
 

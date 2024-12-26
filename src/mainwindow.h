@@ -2,6 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QLineEdit>
+#include <QWidget>
+#include <QString>
 #include "matrix.h"
 
 QT_BEGIN_NAMESPACE

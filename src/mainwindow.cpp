@@ -3,6 +3,7 @@
 #include "matrix.h"
 #include <QMessageBox>
 #include <QLineEdit>
+#include <QPushButton>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
